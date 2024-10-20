@@ -1,0 +1,72 @@
+/* Estabilishing style for main parts of the website */
+
+html {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header {
+    color: yellow;
+    background-color: black;
+    text-align: center;
+    padding: 30px;
+    margin-top: -25px;
+    margin-left: -25px;
+    margin-right: -25px;
+}
+
+#titulo {
+    text-align: center;
+    
+}
+
+
+nav {
+    text-align: left;
+    padding-top: 10px;
+}
+
+a {
+    color: yellow;
+}
+a:hover {
+    text-decoration: dashed;
+    color: yellow;
+}
+
+footer {
+    text-align: center;
+    color: yellow;
+    background-color: black;
+    margin-top: -25;
+    margin-left: -25px;
+    margin-right: -25px;
+    margin-bottom: -25px;
+}
+
+/* Style for especific elements */
+
+h1 {
+    display: inline-block;
+}
+
+ 
+
+#exp {
+    display: inline-block;
+}
+
+#team {
+    height: 300px;
+    width: 300px;
+    display: inline-block;
+}
+
+
+td {
+    padding: 5px;
+    text-align: center;
+    border: solid black;
+    border-collapse: collapse;
+}
+
+

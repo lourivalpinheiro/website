@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NETO PINHEIRO</title>
+    <link rel="shortcut icon" href="images/logo.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<header>
+     <DIV id="titulo">NETO PINHEIRO</DIV>
+     <div id="nav">
+         <nav>
+             <a target="_self" href="index.html">Currículo</a>
+         </nav>
+     </div>
+ </header>
+<body>
+    <main>
+        <h1>Cursos</h1>
+        <table>
+            <thead>
+                <th>nome</th>
+                <th>mes</th>
+                <th>categoria</th>
+                <th>carga_horaria</th>
+                <th>instituicao</th>
+            </thead>
+            <tbody>
+               <tr>
+                    <td>Git e Github</td>
+                    <td>Outubro</td>
+                    <td>Tecnologia</td>
+                    <td>20h</td>
+                    <td>Curso em Vídeo</td>
+                </tr>
+               <tr>
+                    <td>Inteligência emocional 4.0</td>
+                    <td>Outubro</td>
+                    <td>Soft Skill</td>
+                    <td>20h</td>
+                    <td>Conquer Business School</td>
+               </tr>
+               <tr>
+                <td>Controladoria</td>
+                <td>Outubro</td>
+                <td>Contabilidade</td>
+                <td>6h</td>
+                <td>Cefis</td>
+           </tr>
+           <tr>
+                <td>Demonstrações Contábeis</td>
+                <td>Outubro</td>
+                <td>Contabilidade</td>
+                <td>5h30</td>
+                <td>Cefis</td>
+           </tr>
+               <tr>
+                    <td>Iniciação Contábil</td>
+                    <td>Agosto</td>
+                    <td>Contabilidade</td>
+                    <td>2h40</td>
+                    <td>Cefis</td>
+               </tr>
+               <tr>
+                    <td>Plano de Contas Contábil</td>
+                    <td>Agosto</td>
+                    <td>Contabilidade</td>
+                    <td>1h50</td>
+                    <td>Cefis</td>
+               </tr>
+               <tr>
+                    <td>Rotinas de Auxiliar Administrativo</td>
+                    <td>Agosto</td>
+                    <td>Contabilidade</td>
+                    <td>2h10</td>
+                    <td>Cefis</td>
+               </tr>
+               <tr>
+                    <td>Simplifica Excel Express</td>
+                    <td>Junho</td>
+                    <td>Microsoft Office</td>
+                    <td>10h</td>
+                    <td>Simplifica Treinamentos</td>
+               </tr>
+               <tr>
+                    <td>Python - Mundo 1</td>
+                    <td>Junho</td>
+                    <td>Tecnologia</td>
+                    <td>40h</td>
+                    <td>Curso em Vídeo</td>
+               </tr>
+               <tr>
+                    <td>Python: noções introdutórias</td>
+                    <td>Junho</td>
+                    <td>Tecnologia</td>
+                    <td>3h</td>
+                    <td>Ada Tech</td>
+               </tr>
+               <tr>
+                    <td>Certificação Lean Seis Sigma White Belt</td>
+                    <td>Maio</td> 
+                    <td>Administração</td>
+                    <td>8h</td>
+                    <td>FM2S</td>
+               </tr>
+            </tbody>
+        </table>
+        <br>
+        <h1>Quantidade de horas de estudo:</h1>
+        <div>
+          <canvas id="fig1"></canvas>
+        </div>
+    </main>
+    <script>
+     const ctx = document.getElementById('fig1');
+   
+     new Chart(ctx, {
+       type: 'bar',
+       data: {
+         labels: ['Maio', 'Junho', 'Agosto', 'Outubro'],
+         datasets: [{
+           label: 'Horas de estudo por mês',
+           data: [8.00, 53.00, 6.00, 51.30],
+           borderWidth: 1,
+           backgroundColor: "yellow",
+           fontColor: "black"
+         }]
+       },
+       options: {
+         scales: {
+           y: {
+             beginAtZero: true
+           }
+         }
+       }
+     });
+   </script>
+</body>
+<footer>
+     By Neto Pinheiro
+</footer>
+</html>
