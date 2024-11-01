@@ -70,8 +70,6 @@ def curriculum():
 
 
 def knowledge():
-    st.markdown("# Conhecimento")
-    st.divider()
     st.markdown("# Cursos extra-curriculares:")
     st.table(df1)
 
