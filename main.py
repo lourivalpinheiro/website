@@ -47,11 +47,9 @@ def curriculum():
     st.markdown("# Lourival Teixeira Pinheiro Neto")
     st.markdown("## Educação")
     st.divider()
-    st.markdown(
-       """1. Ciências Contábeis - Anhaguera - 2028;
-          2. Aux. Administrativo Financeiro - Cebrac - 2025;
-          3. Exchange student - MountainView High School - New Zealand."""
-    )
+    st.markdown("1. Ciências Contábeis - Anhaguera - 2028;")
+    st.markdown("2. Aux. Administrativo Financeiro - Cebrac - 2025;")
+    st.markdown("3. Exchange student - MountainView High School - New Zealand.")
 
     st.markdown("## Experiência")
     st.divider()
