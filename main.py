@@ -5,16 +5,10 @@ import plotly_express as px
 # Setting up data
 
 course_list = {
-<<<<<<< Updated upstream
     "nome": ["BPO Financeiro", "Certificação Lean Six Sigma: white belt", "Simplifica Excel Express", "Python - Mundo 1", "Python: noções introdutórias", "Iniciação Contábil", "Plano de Contas Contábil", "Git e Github", "Inteligência Emocional 4.0", "Controladoria", "Demonstrações Contábeis", "MEG: Modelo de Excelência em Gestão", "Perfil Comportamental"],
     "mes": ["Maio", "Maio", "Junho", "Junho", "Junho", "Agosto", "Agosto", "Outubro", "Outubro", "Outubro", "Outubro", "Novembro", "Novembro"],
     "carga_horaria": [1, 8, 10, 40, 5, 5, 2, 20, 10, 6, 5, 1, 2]
 }
-=======
-     "nome": ["BPO Financeiro", "Certificação Lean Six Sigma: white belt", "Simplifica Excel Express", "Python - Mundo 1", "Python: noções introdutórias", "Iniciação Contábil", "Plano de Contas Contábil", "Git e Github", "Inteligência Emocional 4.0", "Controladoria", "Demonstrações Contábeis", "MEG: Modelo de Excelência em Gestão", "Perfil Comportamental"],
-    "mes": ["Maio", "Maio", "Junho", "Junho", "Junho", "Agosto", "Agosto", "Outubro", "Outubro", "Outubro", "Outubro", "Novembro", "Novembro"],
-    "carga_horaria": [1, 8, 10, 40, 5, 5, 2, 20, 10, 6, 5, 1, 2]
->>>>>>> Stashed changes
 
 
 df1 = pd.DataFrame(course_list)
