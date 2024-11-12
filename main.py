@@ -5,10 +5,11 @@ import plotly_express as px
 # Setting up data
 
 course_list = {
-    "nome": ["BPO Financeiro", "Certificação Lean Six Sigma: white belt", "Simplifica Excel Express", "Python - Mundo 1", "Python: noções introdutórias", "Iniciação Contábil", "Plano de Contas Contábil", "Git e Github", "Inteligência Emocional 4.0", "Controladoria", "Demonstrações Contábeis"],
-    "mes": ["Maio", "Maio", "Junho", "Junho", "Junho", "Agosto", "Agosto", "Outubro", "Outubro", "Outubro", "Outubro"],
-    "carga_horaria": [1, 8, 10, 40, 5, 5, 2, 20, 10, 6, 5]
+    "nome": ["BPO Financeiro", "Certificação Lean Six Sigma: white belt", "Simplifica Excel Express", "Python - Mundo 1", "Python: noções introdutórias", "Iniciação Contábil", "Plano de Contas Contábil", "Git e Github", "Inteligência Emocional 4.0", "Controladoria", "Demonstrações Contábeis", "MEG: Modelo de Excelência em Gestão", "Perfil Comportamental"],
+    "mes": ["Maio", "Maio", "Junho", "Junho", "Junho", "Agosto", "Agosto", "Outubro", "Outubro", "Outubro", "Outubro", "Novembro", "Novembro"],
+    "carga_horaria": [1, 8, 10, 40, 5, 5, 2, 20, 10, 6, 5, 1, 2]
 }
+
 
 df1 = pd.DataFrame(course_list)
 
@@ -20,8 +21,8 @@ programmed_budget = {
 df2 = pd.DataFrame(programmed_budget)
 
 curso_mes = {
-    "mes": ["Maio", "Junho", "Agosto", "Outubro"],
-    "quantidade": [2, 3, 2, 4]
+    "mes": ["Maio", "Junho", "Agosto", "Outubro", "Novembro"],
+    "quantidade": [2, 3, 2, 4, 2]
 }
 
 df3 = pd.DataFrame(curso_mes)
