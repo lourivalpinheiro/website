@@ -5,9 +5,9 @@ import plotly_express as px
 # Setting up data
 
 course_list = {
-    "nome": ["BPO Financeiro", "Certificação Lean Six Sigma: white belt", "Simplifica Excel Express", "Python - Mundo 1", "Python: noções introdutórias", "Iniciação Contábil", "Plano de Contas Contábil", "Git e Github", "Inteligência Emocional 4.0", "Controladoria", "Demonstrações Contábeis"],
-    "mes": ["Maio", "Maio", "Junho", "Junho", "Junho", "Agosto", "Agosto", "Outubro", "Outubro", "Outubro", "Outubro"],
-    "carga_horaria": [1, 8, 10, 40, 5, 5, 2, 20, 10, 6, 5]
+    "nome": ["BPO Financeiro", "Certificação Lean Six Sigma: white belt", "Simplifica Excel Express", "Python - Mundo 1", "Python: noções introdutórias", "Iniciação Contábil", "Plano de Contas Contábil", "Git e Github", "Inteligência Emocional 4.0", "Controladoria", "Demonstrações Contábeis", "MEG: Modelo de Excelência em Gestão", "Perfil Comportamental"],
+    "mes": ["Maio", "Maio", "Junho", "Junho", "Junho", "Agosto", "Agosto", "Outubro", "Outubro", "Outubro", "Outubro", "Novembro", "Novembro"],
+    "carga_horaria": [1, 8, 10, 40, 5, 5, 2, 20, 10, 6, 5, 1, 2]
 }
 
 df1 = pd.DataFrame(course_list)
@@ -20,8 +20,8 @@ programmed_budget = {
 df2 = pd.DataFrame(programmed_budget)
 
 curso_mes = {
-    "mes": ["Maio", "Junho", "Agosto", "Outubro"],
-    "quantidade": [2, 3, 2, 4]
+    "mes": ["Maio", "Junho", "Agosto", "Outubro", "Novembro"],
+    "quantidade": [2, 3, 2, 4, 2]
 }
 
 df3 = pd.DataFrame(curso_mes)
@@ -146,6 +146,21 @@ def articles():
     Liderança é um comportamento a ser desenvolvido e bons líderes surgem de uma boa liderança mediante eles mesmos. Em um paralelo com "O mito da caverna" de Platão, convido você a sair da caverna. Não deixe que o líder em você morra mergulhado pelas sombras das dúvidas que sua mente insiste em pregar. Lidere a si mesmo!
     """)
 
+def financedata():
+    st.set_page_config(page_title="Finanças", layout="wide")
+    st.markdown("# Finanças")
+    st.divider()
+    st.markdown('''Esses dados foram coletados por meio de formulários do Google e feitos como um projeto divertido durante o bloqueio do COVID-19. Aqui estão os nomes das colunas fornecidas para fornecer mais informações sobre os dados:
+                
+    1. Gênero
+    2. Idade
+    3. Você investe em Avenidas de Investimento?
+    4. Quais você acha que são as melhores opções para investir seu dinheiro?
+    5. Quais você acha que são as melhores opções para investir seu dinheiro?''')
+
+    st.markdown("Esse é o dataset:")
+    data_finance = pd.read_csv("file/Finance_data.csv")
+    st.dataframe(data_finance)
 
 
 # Setting up the navigation bar
@@ -155,7 +170,8 @@ def articles():
 pages = {
     "Menu Principal": [st.Page(main_menu, title='Blog')],
     "Conhecimento": [st.Page(articles, title="Artigos"), st.Page(knowledge, title="Cursos")],
-    "Sobre mim": [st.Page(curriculum, title="Currículo")],
+    "Projetos": [st.Page(financedata, title="Finanças")],
+    "Sobre mim": [st.Page(curriculum, title="Currículo")]
 }
     
 nav = st.navigation(pages)
