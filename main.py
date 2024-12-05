@@ -59,10 +59,6 @@ def curriculum():
     st.divider()
     st.markdown("- Auxiliar Administrativo - RConsult (abril de 2024 - maio de 2024).")
 
-    st.markdown("## Cursos extra-curriculares:")
-    st.divider()
-    st.table(df1)
-
     st.markdown("## Idiomas:")
     st.markdown('- Inglês: C2 Proficiency level (EF SET CERTIFICATE).')
 
