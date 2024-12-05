@@ -7,7 +7,8 @@ import plotly_express as px
 ## Setting up the functions
 
 def main_menu():
-    st.set_page_config("Currículo", layout="wide", page_icon='favicon.ico')
+    st.set_page_config("Currículo", layout="wide")
+    st.logo('favicon.ico')
     st.markdown("# Blog")
     st.markdown("### Destaques")
     st.divider()
