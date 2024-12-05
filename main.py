@@ -7,6 +7,7 @@ import plotly_express as px
 ## Setting up the functions
 
 def main_menu():
+    st.set_page_config("Currículo", layout="wide", page_icon='favicon.ico')
     st.markdown("# Blog")
     st.markdown("### Destaques")
     st.divider()
@@ -17,7 +18,6 @@ def main_menu():
         st.link_button("Aprendizado Contínuo: a chave para o sucesso profissional no século XXI", icon="🧠", url="https://www.linkedin.com/pulse/aprendizado-cont%C3%ADnuo-chave-para-o-sucesso-s%C3%A9culo-xxi-pinheiro-lb1nf/")
 
 def curriculum():
-    st.set_page_config("Currículo", layout="wide", page_icon='favicon.ico')
     st.markdown("# Lourival Teixeira Pinheiro Neto")
     st.markdown("## Educação")
     st.divider()
