@@ -2,19 +2,6 @@ import streamlit as st
 import pandas as pd
 import plotly_express as px
 
-# Data
-
-finance_education = {
-    'instituicao': ['Anhaguera', 'Cebrac', 'Unifatecie'],
-    'valor': [156.70, 299.00, 66.00]
-}
-
-finance = pd.DataFrame(finance_education)
-
-# View 
-
-fig1 = px.bar(finance, x='instituicao', y='valor')
-
 # Pages
 
 ## Setting up the functions
@@ -53,10 +40,25 @@ def curriculum():
 
 
 def knowledge():
-    st.logo('favicon.ico')
-    st.markdown('# Orçamento para educação em 2025:')
-    st.divider()
-    st.plotly_chart(fig1)
+    # Data
+    
+    finance_education = {
+        'instituicao': ['Anhaguera', 'Cebrac', 'Unifatecie'],
+        'valor': [156.70, 299.00, 66.00]
+    }
+    
+    finance = pd.DataFrame(finance_education)
+    
+    # View 
+    
+    fig1 = px.bar(finance, x='instituicao', y='valor')
+        st.logo('favicon.ico')
+
+    # Page
+
+        st.markdown('# Orçamento para educação em 2025:')
+        st.divider()
+        st.plotly_chart(fig1)
 
 
 # Setting up the navigation bar
