@@ -51,7 +51,7 @@ def knowledge():
     
     # View 
     
-    fig1 = px.box(finance, x='instituicao', y='valor', title='Orçamento em Educação 2025')
+    fig1 = px.box(finance, x='instituicao', y='valor')
     
     # Page
     st.logo('favicon.ico')
