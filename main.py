@@ -44,7 +44,7 @@ def knowledge():
     
     finance_education = {
         'instituicao': ['Anhaguera', 'Cebrac', 'Unifatecie'],
-        'valor': [156.70, 299.00, 66.00]
+        'valor': [1880.40, 3588.00, 792.00]
     }
     
     finance = pd.DataFrame(finance_education)
