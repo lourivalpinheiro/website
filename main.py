@@ -52,13 +52,12 @@ def knowledge():
     # View 
     
     fig1 = px.bar(finance, x='instituicao', y='valor')
-        st.logo('favicon.ico')
-
+    
     # Page
-
-        st.markdown('# Orçamento para educação em 2025:')
-        st.divider()
-        st.plotly_chart(fig1)
+    st.logo('favicon.ico')
+    st.markdown('# Orçamento para educação em 2025:')
+    st.divider()
+    st.plotly_chart(fig1)
 
 
 # Setting up the navigation bar
