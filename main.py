@@ -51,7 +51,7 @@ def knowledge():
     
     # View 
     
-    fig1 = px.box(finance, x='instituicao', y='valor')
+    fig1 = px.box(finance, x='valor')
     
     # Page
     st.logo('favicon.ico')
